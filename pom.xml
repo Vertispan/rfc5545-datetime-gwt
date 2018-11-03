@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.vertispan.gwtsupport</groupId>
+  <artifactId>rfc5545-datetime-gwt</artifactId>
+  <version>0.2.4-1</version>
+  <packaging>gwt-lib</packaging>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.dmfs</groupId>
+      <artifactId>rfc5545-datetime</artifactId>
+      <version>0.2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.dmfs</groupId>
+      <artifactId>rfc5545-datetime</artifactId>
+      <version>0.2.4</version>
+      <classifier>sources</classifier>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.ltgt.gwt.maven</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>1.0-rc-10</version>
+        <extensions>true</extensions>
+        <configuration>
+          <moduleName>org.dmfs.rfc5545.RFC5545</moduleName>
+          <relocateSuperSource>true</relocateSuperSource>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
