@@ -184,7 +184,7 @@ public class TimeZone implements Cloneable, Serializable {
     }
 
     public static TimeZone getDefault() {
-        return getTimeZone("UTC")
+        return getTimeZone("UTC");
     }
 
     private final com.google.gwt.i18n.client.TimeZone gwtTz;
