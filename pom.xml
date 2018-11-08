@@ -8,6 +8,40 @@
   <artifactId>rfc5545-datetime</artifactId>
   <version>0.2.4-1</version>
   <packaging>gwt-lib</packaging>
+  <name>GWT support for RFC5545-datetime</name>
+  <description>
+    This project provides simple support not present in GWT's own JRE
+    emulation for classes required to use org.dmfs:rfc5545-datetime
+    in a GWT project.
+  </description>
+  <url>https://github.com/vertispan/rfc5545-datetime-gwt</url>
+
+  <issueManagement>
+    <url>https://github.com/vertispan/rfc5545-datetime-gwt/issues</url>
+    <system>GitHub issues</system>
+  </issueManagement>
+
+  <scm>
+    <url>https://github.com/Vertispan/rfc5545-datetime-gwt</url>
+    <connection>scm:git:git://github.com/vertispan/rfc5545-datetime-gwt.git</connection>
+    <developerConnection>scm:git:git://github.com/vertispan/rfc5545-datetime-gwt.git</developerConnection>
+  </scm>
+
+  <organization>
+    <name>Vertispan</name>
+    <url>https://www.vertispan.com</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>Colin Alworth</name>
+      <email>colin@vertispan.com</email>
+    </developer>
+    <developer>
+      <name>Ahmad Bawaneh</name>
+      <email>akabme@gmail.com</email>
+    </developer>
+  </developers>
 
   <licenses>
     <license>
@@ -44,6 +78,14 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
   <profiles>
     <!-- release profile to create sources, javadoc, and sign all artifacts before uploading -->
     <profile>
